@@ -1,7 +1,7 @@
 import React from 'react';
 import Free from '../assets/Free.png'
 import Premium from '../assets/Premium.png'
-import Tick from '../assets/Tick.png'
+import Tick from '../assets/tick.png'
 
 const PricingPlans = () => {
   const plans = [
