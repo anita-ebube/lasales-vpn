@@ -5,15 +5,19 @@ import Features from '../components/features'
 import PricingPlans from '../components/pricing'
 import Global from '../components/global'
 import Sponsor from '../components/sponsors'
+import Newsletter from '../components/newsletter'
+import Footer from '../components/footer'
 const home = () => {
   return (
-    <div>
+    <div className='p-7'>
       <Navbar />
       <Hero />
       <Features />
       <PricingPlans />
       <Global />
-      <Sponsor />
+      {/* <Sponsor /> */}
+      <Newsletter />
+      <Footer />
     </div>
   )
 }

@@ -15,13 +15,13 @@ const testimonials = [
     quote: '"I like it because I like to travel far and still can connect with high speed."',
     rating: 4.5
   },
-  {
-    id: 3,
-    name: 'Kim Young Jou',
-    location: 'Seoul, South Korea',
-    quote: '"This is very unusual for my business that currently requires a virtual private network that has high security."',
-    rating: 4.5
-  }
+//   {
+//     id: 3,
+//     name: 'Kim Young Jou',
+//     location: 'Seoul, South Korea',
+//     quote: '"This is very unusual for my business that currently requires a virtual private network that has high security."',
+//     rating: 4.5
+//   }
 ];
 
 const Testimonials = () => {
@@ -47,7 +47,7 @@ const Testimonials = () => {
       </div>
 
       <div className="relative max-w-6xl mx-auto">
-        <div className="flex justify-center space-x-4 overflow-hidden">
+        <div className="flex space-x-4 overflow-hidden">
           {testimonials.map((testimonial, index) => (
             <div 
               key={testimonial.id}

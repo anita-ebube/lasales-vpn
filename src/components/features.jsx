@@ -14,30 +14,32 @@ const features = () => {
 
     return (
         <div>
-            <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-3 gap-8 border rounded-lg shadow-lg">
-                <div className="flex items-center space-x-4 justify-center">
-                    <img src={location} alt="" />
+            <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-3 gap-6 sm:gap-8 border rounded-lg shadow-lg">
+                <div className="flex flex-col sm:flex-col items-center space-x-0 sm:space-x-4 text-center sm:text-left justify-center">
+                    <img src={location} alt="Location Icon" className="w-12 h-12" />
                     <div>
                         <h3 className="text-2xl font-bold">90+</h3>
                         <p className="text-gray-600">Users</p>
                     </div>
                 </div>
-                <div className="flex items-center space-x-4 justify-center">
-                    <img src={server} alt="" />
+
+                <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4 text-center sm:text-left justify-center">
+                    <img src={server} alt="Server Icon" className="w-12 h-12" />
                     <div>
                         <h3 className="text-2xl font-bold">30+</h3>
                         <p className="text-gray-600">Locations</p>
                     </div>
                 </div>
-                <div className="flex items-center space-x-4 justify-center">
-                    <img src={user} alt="" />
+
+                <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4 text-center sm:text-left justify-center">
+                    <img src={user} alt="User Icon" className="w-12 h-12" />
                     <div>
                         <h3 className="text-2xl font-bold">50+</h3>
                         <p className="text-gray-600">Servers</p>
                     </div>
                 </div>
-
             </div>
+
             <div className="max-w-6xl mx-auto px-4 py-16 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
                 {/* Illustration */}
                 <div className="relative z-10">

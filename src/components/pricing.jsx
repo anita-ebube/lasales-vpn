@@ -55,12 +55,12 @@ const PricingPlans = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-3 gap-8 ">
         {plans.map((plan, index) => (
           <div
             key={index}
             className={`
-              border rounded-lg p-6 text-center transition-all duration-300
+              border rounded-lg p-6 text-center transition-all duration-300 lg:mt-0 mt-10
               ${plan.highlight
                 ? 'hover:border-red-500 shadow-xl scale-105 border-2'
                 : 'border-gray-200 hover:shadow-lg'}
@@ -77,13 +77,13 @@ const PricingPlans = () => {
             <h3 className="text-xl font-bold mb-4">{plan.name}</h3>
 
             {/* Features List */}
-            <div className="space-y-3 mb-6">
+            <div className="space-y-3 mb-6 mx-auto  ">
               {plan.features.map((feature, featureIndex) => (
                 <div
                   key={featureIndex}
-                  className="flex items-center justify-center space-x-2"
+                  className="h-7 items-center flex mx-auto space-x-2"
                 >
-                  <img src={Tick} alt="" />
+                  <img src={Tick} alt="tick image" />
                   <span className="text-gray-700">{feature}</span>
                 </div>
               ))}
